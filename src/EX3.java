@@ -11,7 +11,7 @@ public class EX3 {
         apresentarResultado(media);
     }
 
-    private static double lerNota(Scanner scan, int numeroNota) {
+    public static double lerNota(Scanner scan, int numeroNota) {
         double nota;
 
         while (true) {
@@ -26,11 +26,11 @@ public class EX3 {
         }
     }
 
-    private static double calcularMedia(double n1, double n2) {
+    public static double calcularMedia(double n1, double n2) {
         return (n1 + n2) / 2;
     }
 
-    private static void apresentarResultado(double media) {
+    public static void apresentarResultado(double media) {
         System.out.println("Média: " + media);
         if (media >= 6) {
             System.out.println("Aprovado");
