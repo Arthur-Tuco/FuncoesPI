@@ -29,7 +29,14 @@ public class EX10 {
                 EX5.apresentarTabuada(numeroTabuada, 1, 10);
                 break;
             case 3:
-                int numeroPrimo = scan.nextInt();
+                int numeroPrimo;
+                do {
+                    System.out.println("Digite um número entre -10000 e 10000: ");
+                    numeroPrimo = scan.nextInt();
+                    if (numeroPrimo < -10000 || numeroPrimo > 10000) {
+                        System.out.println("Número inválido!");
+                    }
+                }while (numeroPrimo < -10000 || numeroPrimo > 10000);
     }
 }
 }
